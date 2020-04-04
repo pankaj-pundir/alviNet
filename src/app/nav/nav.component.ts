@@ -9,21 +9,13 @@ export class NavComponent implements OnInit {
 
   // appTitle: string;
   @Input() appTitle:string;
-  appTitle2 :string = "AlvinSpark";
-  appTitle1 :string = "Alvin Spark";
-  counter = 0;
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  renameTitle(){
-    this.counter+=1;
-    if(this.counter % 2){
-      this.appTitle = this.appTitle2;
-    }
-    else this.appTitle = this.appTitle1;
     // alert(this.counter);
-  }
+  
 
 }

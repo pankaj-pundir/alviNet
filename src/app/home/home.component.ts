@@ -12,16 +12,8 @@ export class HomeComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getUsers().subscribe(data =>{
-      this.users = data;
-      console.log(this.users);
-    });
+    };
   }
 
-  firstClick(){
-    if(this.isGray) this.isGray = false;
-    else this.isGray = true;
-    this.data.servicePopup("HOME");
-  }
 
-}
+
